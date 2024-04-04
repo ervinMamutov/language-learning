@@ -1,22 +1,22 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-function Word({ word, translateWord }) {
+const Word = ({ word, translateWord }) => {
   const [isTranslate, setIsTranslate] = useState(false);
 
   const handleClick = () => {
-    setIsTranslate(true);
+    setIsTranslate(!isTranslate);
   };
 
   return (
     <>
-      {isTranslate && <p>{translateWord}</p>}
-      <p className="word" onClick={(e) => handleClick(e)}>
+      {isTranslate && <span className="translate-word">{translateWord}</span>}
+      <span className="word" onClick={(e) => handleClick(e)}>
         {word}
-      </p>
+      </span>
     </>
   );
-}
+};
 
 Word.propTypes = {
   word: PropTypes.string,

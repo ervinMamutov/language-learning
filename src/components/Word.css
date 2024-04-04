@@ -1,0 +1,18 @@
+.word {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.2em;
+}
+
+.translate-word {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+.word:hover {
+  color: #0000ff;
+  transition: color 0.3s easy;
+  cursor: pointer;
+}
