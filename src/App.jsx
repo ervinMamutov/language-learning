@@ -1,8 +1,12 @@
-import { useState } from 'react';
+import TextBlock from './components/TextBlock';
 import './App.css';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <TextBlock />
+    </>
+  );
 }
 
 export default App;
