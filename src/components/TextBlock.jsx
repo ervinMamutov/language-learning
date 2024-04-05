@@ -10,7 +10,7 @@ const TextBlock = () => {
 
   return (
     <article className="text-block">
-      <section>
+      <section className="text-block-unit">
         {words.map((word, index) => (
           <Word word={word} key={index} translateWord="Hi" />
         ))}

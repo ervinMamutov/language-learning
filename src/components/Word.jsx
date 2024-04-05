@@ -1,3 +1,4 @@
+import PopUpWindow from './PopUpWindow';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
@@ -10,7 +11,7 @@ const Word = ({ word, translateWord }) => {
 
   return (
     <>
-      {isTranslate && <span className="translate-word">{translateWord}</span>}
+      {isTranslate && <PopUpWindow translateWord="Hi" />}
       <span className="word" onClick={(e) => handleClick(e)}>
         {word}
       </span>

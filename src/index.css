@@ -1,4 +1,6 @@
 @import './components/Word.css';
+@import './components/TextBlock.css';
+@import './components/PopUpWindow.css';
 
 /* CSS Reset */
 html,
@@ -104,6 +106,7 @@ section {
   display: block;
 }
 body {
+  box-sizing: border-box;
   max-width: 1140px;
   line-height: 1;
   margin: 0 auto;
